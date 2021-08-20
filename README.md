@@ -1,8 +1,8 @@
 # Crown Clothing
+ 
+An E-commerce portfolio project that demonstrates my understanding of React principles
 
-## React Portfolio Project
-
-Technologies To Be Used:
+### Technologies To Be Used:
 
 - Redux 
 - GraphQL 
