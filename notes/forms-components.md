@@ -29,3 +29,18 @@
         - span 'price'
     - import CollectionItem into CollectionPreview
         - destructure id and rest of props and pass them into CollectionItem component
+
+## Header Component
+
+- make new folder 'assets' in src with crown.svg
+- Functional component
+- import ReactComponent as Logo from svg
+- 'header' div
+    - 'logo-container' Router Link to '/' homepage
+        - 'logo' Logo
+    - 'options' div
+        - 'shop' Link
+        - 'option' Link
+- import Header into App.js
+    - initialize above Switch so it always appears on every page
+    
