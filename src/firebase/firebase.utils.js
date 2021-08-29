@@ -39,13 +39,12 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     const createdAt = new Date();
 
     try {
-      const docRef = await setDoc(userRef, {
+      await setDoc(userRef, {
         displayName,
         email,
         createdAt,
         ...additionalData
       })
-      console.log("Document written with ID: ', ", docRef.id)
     } catch(e) {
       console.log('error creating user', e.message);
     }
