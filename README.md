@@ -9,3 +9,7 @@ An E-commerce portfolio project that demonstrates my understanding of React prin
 - ContextAPI 
 - Stripe 
 - Firebase
+
+## TODO
+
+- Fix currentUser object to be serializable so it can be safely stored in state
