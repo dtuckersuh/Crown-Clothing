@@ -61,6 +61,7 @@ class App extends React.Component {
   }
 }
 
+// Redux methods
 const mapStateToProps = ({ user }) => ({
   currentUser: user.currentUser
 })
