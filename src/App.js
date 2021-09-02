@@ -7,7 +7,7 @@ import { onSnapshot } from 'firebase/firestore';
 
 // Redux 
 import { connect } from 'react-redux';
-import { setCurrentUser } from './redux/userSlice';
+import { setCurrentUser } from './redux/user/userSlice';
 
 // Pages
 import Homepage from './pages/homepage/homepage-component.jsx';
