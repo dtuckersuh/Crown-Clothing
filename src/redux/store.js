@@ -7,17 +7,21 @@ import logger from 'redux-logger';
 
 import userReducer from './user/userSlice';
 import cartReducer from './cart/cartSlice';
+import directoryReducer from './directory/directory.reducer';
+import shopReducer from './shop/shop.reducer';
 
 const persistConfig = {
     key: 'root',
     storage,
-    whitelist: ['cart'] // Cart will be persisted
+    whitelist: ['cart'] // components to be persisted 
 }
 
 
 const rootReducer = combineReducers({
     user: userReducer,
-    cart: cartReducer
+    cart: cartReducer,
+    directory: directoryReducer,
+    shop: shopReducer
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)

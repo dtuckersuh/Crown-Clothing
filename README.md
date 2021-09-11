@@ -1,6 +1,6 @@
 # Crown Clothing
  
-An E-commerce portfolio project that demonstrates my understanding of React principles
+Full-stack E-commerce application built with React
 
 ### Technologies To Be Used:
 
