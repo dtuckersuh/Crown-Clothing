@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { combineReducers } from 'redux';
+import { combineReducers, applyMiddleware } from 'redux';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
@@ -26,10 +26,16 @@ const rootReducer = combineReducers({
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
 
+const middlewares = [];
+
+if (process.env.NODE_ENV === 'development') {
+    middlewares.push(logger);
+}
+
 const store = configureStore({
     // automatically combines reducers into root reducer
     reducer: persistedReducer, 
-    middleware: [logger],
+    middleware: middlewares 
 });
 
 // Ensures redux state is saved to persisted storage
